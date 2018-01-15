@@ -51,9 +51,9 @@ Notes
 * I've updated the front end to output files to `solution/src/main/resources/static` rather than including its build it as part of the maven build job. The generated files are added as part of the solution in that folder.
 
 * User stories
- - User story 1 is implemented through the ExpenseWriteController POST endpoint.
- - User story 2 is implemented through the ExpenseReadController GET endpoint.
- - User story 3 utilizes a public exchange rate service sy http://fixer.io/ and calculated the VAT through the backend CurrencyService. 
+  - User story 1 is implemented through the ExpenseWriteController POST endpoint.
+  - User story 2 is implemented through the ExpenseReadController GET endpoint.
+  - User story 3 utilizes a public exchange rate service sy http://fixer.io/ and calculated the VAT through the backend CurrencyService. 
  - User story 4 is handled by the front-end, although is not shown if the user is using story 3's EU localised format or currency (ie. 12,00 EUR). The field is not used by the backend as it calculates VAT as of story 2.
 
 * In regards to error messages (eg. bad request) from the backend to the frontend, I didn't see any implemented UX element to use so these are logged to console to expose them.
