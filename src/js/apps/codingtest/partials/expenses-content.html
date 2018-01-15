@@ -13,11 +13,15 @@
 			</li>
 			<li>
 				<label>Amount</label>
-				<input type="text" ng-required="true" ng-model="newExpense.amount" placeholder="00.00" />
+				<input type="text" ng-required="true" ng-model="newExpense.amount" ng-change="amountUpdate()" placeholder="00.00" />
+			</li>
+			<li ng-hide="newExpense.vat == null || newExpense.vat == ''">
+				<label>VAT</label>
+				<input type="text" ng-required="false" ng-model="newExpense.vat" readonly="readonly"/>
 			</li>
 			<li>
 				<label>Reason</label>
-					<textarea at-auto-resize ng-required="true" ng-model="newExpense.reason" ng-trim="false" placeholder="why oh why?"></textarea>
+				<textarea at-auto-resize ng-required="true" ng-model="newExpense.reason" ng-trim="false" placeholder="why oh why?"></textarea>
 			</li>
 			<li>
 				<label></label>
